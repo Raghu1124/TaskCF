@@ -3,13 +3,11 @@ import PropTypes from "prop-types";
 import {
   Container,
   Segment,
-  Item,
   Divider,
   Button,
   Message,
 } from "semantic-ui-react";
 
-import mindImg from "../../images/mind.svg";
 import {formatQuestions } from "../../utils";
 import Offline from "../Offline";
 import "./style.css";
