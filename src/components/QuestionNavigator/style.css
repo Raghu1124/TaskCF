@@ -1,0 +1,77 @@
+.question-navigator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    border-color: #2185d0;
+}
+
+/* Attempted - answered question */
+.nav-button.attempted {
+    background: #21ba45;
+    color: white;
+    border-color: #16ab39;
+    font-weight: bold;
+}
+
+.nav-button.attempted:hover {
+    background: #16ab39;
+    border-color: #0d7a2a;
+}
+
+/* Visited - seen but not answered */
+.nav-button.visited {
+    background: #e4dfdf;
+    border-color: #999;
+    color: #666;
+}
+
+.nav-button.visited:hover {
+    background: #e0e0e0;
+}
+
+/* Current question */
+.nav-button.current {
+    border-width: 3px;
+    box-shadow: 0 0 0 2px rgba(33, 133, 208, 0.2);
+}
+
+.nav-button.current.attempted {
+    box-shadow: 0 0 0 2px rgba(33, 186, 69, 0.2);
+}
+
+@media (max-width: 768px) {
+    .nav-button {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .question-navigator {
+        gap: 8px;
+        padding: 15px;
+    }
+}
